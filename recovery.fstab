@@ -1,0 +1,9 @@
+# mount point	fstype	device
+/recovery       emmc    /dev/block/platform/msm_sdcc.1/by-name/recovery	
+/boot           emmc    /dev/block/platform/msm_sdcc.1/by-name/boot
+/cache          ext4    /dev/block/platform/msm_sdcc.1/by-name/cache
+/cust			ext4	/dev/block/platform/msm_sdcc.1/by-name/cust	        	flags=display="Cust";backup=1;wipeingui
+/data           ext4    /dev/block/platform/msm_sdcc.1/by-name/userdata
+/HWUserData     vfat    /dev/block/platform/msm_sdcc.1/by-name/grow             flags=display="Internal Memory";storage;wipeingui;removable
+/system         ext4    /dev/block/platform/msm_sdcc.1/by-name/system
+/external_sd    vfat    /dev/block/mmcblk1p1    /dev/block/mmcblk1         		flags=display="Micro SDCard";storage;wipeingui;removable
