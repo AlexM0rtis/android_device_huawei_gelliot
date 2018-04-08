@@ -15,7 +15,7 @@
 #
 
 # Platform
-TARGET_BOOTLOADER_BOARD_NAME := gelliot
+TARGET_BOOTLOADER_BOARD_NAME := MSM8610
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
@@ -45,7 +45,7 @@ TARGET_CUSTOM_KERNEL_HEADERS := device/huawei/gelliot/include
 BOARD_MKBOOTIMG_ARGS := --dt device/huawei/gelliot/dt.img --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 
 # USB Mounting
-BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
+BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 
 # Recovery
 RECOVERY_VARIANT := twrp

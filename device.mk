@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_COPY_FILES += \
 device/huawei/gelliot/kernel:kernel \
 device/huawei/gelliot/dt.img:dt.img \
+device/huawei/gelliot/init.recovery.usb.rc:root/init.recovery.usb.rc \
+device/huawei/gelliot/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
+device/huawei/gelliot/init.qcom.usb.sh:root/init.qcom.usb.sh \
 device/huawei/gelliot/recovery/sbin/charge:/recovery/root/sbin/charge \
 device/huawei/gelliot/recovery/sbin/chargelog.sh:/recovery/root/sbin/chargelog.sh \
 device/huawei/gelliot/recovery/sbin/rmt_storage:/recovery/root/sbin/rmt_storage \
